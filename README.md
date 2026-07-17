@@ -8,8 +8,8 @@ It maps stakeholders, benefits, burdens, consent, safety effects, environmental 
 
 The instrument is local first, browser based, and contained in a single HTML file.
 
-**Current version:** 2.1  
-**Primary artifact:** `steward-v2.1.html`
+**Current version:** 2.2  
+**Primary artifact:** `steward-v2.2.html`
 
 ---
 
@@ -289,50 +289,85 @@ Available report profiles include:
 
 ---
 
-## STEWARD v2.1 Features
+## STEWARD v2.2 Features
 
-### Integrated Ethics Workbench
+### Consolidated Workflow Shell
 
-The interface is organized into five workflow groups:
+STEWARD now presents five lifecycle stages in the main navigation instead of a long list of individual modules.
 
 #### Define
 
-* Overview
+Frame the decision and include affected parties.
+
+The stage work bar provides:
+
 * Decision frame
 * Stakeholders
 * Engagement
 
 #### Investigate
 
-* Evidence
-* Claims
-* Impacts
+Test claims, examine distributed consequences, and identify professional duties.
+
+The stage work bar provides:
+
+* Patterns and reasoning checks
+* Evidence and claims
+* Distributed impacts
 * Professional duties
 
 #### Decide
 
+Compare real alternatives, design safeguards, and preserve deliberation.
+
+The stage work bar provides:
+
 * Options
 * Safeguards
-* Deliberation
-* Approvals
+* Deliberation and approval
 
 #### Operate
 
+Continue ethical review after implementation.
+
+The stage work bar provides:
+
 * Monitoring
-* Incidents
+* Incidents and complaints
 * Change control
-* Review triggers
+* Reconsideration and reopening
 
 #### Document
 
-* Relationships
-* Archive
-* Baselines
-* Decision lineage
+Preserve traceability and publish the appropriate record.
+
+The stage work bar provides:
+
+* Relationship inspector
+* Baselines and change history
 * Stakeholder maps
-* Ethics brief
-* Templates
-* Settings
+* Ethics brief builder
+* Archive
+* Settings and recovery
+
+The application remembers the most recently used tool within each stage.
+
+### Workflow Cleanup
+
+Version 2.2 also introduces:
+
+* A stage-specific work bar below the main toolbar
+* Completion summaries for each lifecycle stage
+* A single Workspace menu for demonstration data, imports, exports, patterns, archive, and recovery
+* A less crowded top toolbar
+* Removal of duplicate dashboard workflow and next-action panels
+* Editors that collapse after records exist so review material remains visible
+* Persistent editor state
+* Calmer record cards with fewer shadows
+* Sticky search and filter controls on larger screens
+* Improved horizontal navigation on small screens
+* Mobile overflow corrections
+* Shorter and more consistent module names
 
 ### Decision Readiness
 
@@ -550,7 +585,7 @@ Because browser storage can be cleared, important work should be exported regula
 
 No installation process is required.
 
-1. Download `steward-v2.1.html`
+1. Download `steward-v2.2.html`
 2. Open it in a modern browser
 3. Begin a new decision or load the demonstration
 4. Export the workspace JSON regularly
@@ -815,7 +850,7 @@ A desktop browser is recommended for complex reviews. Mobile layouts are intende
 STEWARD is currently distributed as one self contained file:
 
 ```text
-steward-v2.1.html
+steward-v2.2.html
 ```
 
 The file contains:
@@ -833,6 +868,18 @@ No build system or external dependency is required.
 ---
 
 ## Version History
+
+### 2.2
+
+* Consolidated five-stage lifecycle navigation
+* Stage-specific tool navigation
+* Simplified Workspace menu
+* Reduced top-toolbar crowding
+* Duplicate dashboard pathways removed
+* Persistent compact record editors
+* Stage completion summaries
+* Desktop and mobile workflow cleanup
+* No data-schema change from version 2.1
 
 ### 2.1
 

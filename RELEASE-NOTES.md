@@ -1,36 +1,35 @@
-# STEWARD v2.1 Release Notes
+# STEWARD v2.2 Release Notes
 
-STEWARD is a local-first engineering ethics decision instrument that preserves
-stakeholder impacts, evidence, competing obligations, dissent, safeguards,
-monitoring, and unresolved concerns without producing a single ethics score.
+## Workflow Consolidation and Cleanup
 
-## v2.1 Highlights
+STEWARD v2.2 reorganizes the application around five lifecycle stages:
 
-- Multi-pattern ethical review
-- 26 built-in decision-pattern contexts
-- Custom local pattern builder
-- Structured review of pattern prompts
-- 28 ethical reasoning failure-mode detectors
-- Human disposition, ownership, evidence, and rationale for every scanner signal
-- Dashboard and ethics-brief integration
-- Migration support for earlier STEWARD workspaces
-- Local autosave and JSON import/export
-- Markdown, HTML, CSV, Word-compatible, presentation-outline, print, and PDF workflows
+**Define → Investigate → Decide → Operate → Document**
 
-## Run Locally
+The sidebar now contains only those stages and the Decision Dashboard. Individual tools appear in a stage-specific work bar, preserving all previous capability without forcing the user to scan a long navigation tree.
 
-Open `index.html` or `steward-v2.1.html` in a current desktop browser.
+## Principal Changes
 
-## Static Hosting
+- Consolidated sidebar with five lifecycle stages
+- Stage-specific local navigation for individual tools
+- Remembered last-used tool within each stage
+- Stage completion summaries
+- Simplified top toolbar
+- New Workspace menu for data and advanced tools
+- Patterns and reasoning checks moved into Investigate
+- Relationship tracing, baselines, maps, reports, archive, and recovery grouped under Document
+- Duplicate dashboard workflow and next-action panels removed
+- Record editors collapse once records exist
+- Editor collapse state persists
+- Calmer cards and reduced visual noise
+- Improved mobile stage navigation
+- Horizontal overflow corrected
+- Consistent module naming
 
-Upload the contents of this folder to any static web host. `index.html` is
-included as a deployment-ready copy of the application.
+## Compatibility
 
-## Data Safety
+Version 2.2 does not change the STEWARD data schema. Version 2.1 JSON workspaces remain compatible.
 
-STEWARD saves to browser local storage. Export the complete JSON workspace
-regularly and before clearing browser data, switching devices, or upgrading.
+## Core Principle
 
-## Licensing
-
-No software license has been assigned to this release.
+STEWARD continues to refuse a single ethics score. Workflow completion indicates that analysis was performed, not that a decision is ethically cleared.
